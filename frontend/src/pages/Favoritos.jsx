@@ -117,8 +117,8 @@ function Favoritos() {
                 rows={"4"}
             />
             <div className="modal-favoritos-botones">
-                <button className="btn btn-principal" onClick={() => setModalEditarAbierto(false)}> Cancelar</button>
-                <button className="btn btn-principal" onClick={handleGuardarNota}> Guardar</button>
+                <button className="btn btn-secundario" onClick={() => setModalEditarAbierto(false)}> Cancelar</button>
+                <button className="btn btn-primario" onClick={handleGuardarNota}> Guardar</button>
             </div>
         </Modal>
 
