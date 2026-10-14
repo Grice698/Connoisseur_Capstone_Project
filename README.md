@@ -1,6 +1,6 @@
 # Capstone Full Stack: Connoisseur
 
-**Connoisseur** es una aplicación que busca conciertos y festivales y, sobre el evento elegido, muestra alojamientos cercanos filtrando tres distancias (2, 5, 10km). Los usuarios registrados pueden guardar combinaciones de eventos y alojamientos en una lista de favoritos para consultarlas siempre que deseen. Ahora mismo
+**Connoisseur** es una aplicación que busca conciertos y festivales y, sobre el evento elegido, muestra alojamientos cercanos filtrando tres distancias (2, 5, 10km). Los usuarios registrados pueden guardar combinaciones de eventos y alojamientos en una lista de favoritos para consultarlas siempre que deseen.
 
 ---
 
@@ -8,11 +8,11 @@
 
 - **Cálculo de distancia en tiempo real entre el recinto y los hoteles usando la **Fórmula de Haversine**, con filtros interactivos de 2km, 5km y 10km.**
 
-- **Los usuarios pueden guardar planes, añadir notas personales y eliminarlos.**
-
 - **Flujo de 3 Vistas Condicionales para las búsquedas de hoteles + eventos, filtrado por radios para los alojamientos y un resumen de lo buscado**
 
-- ** **
+- **Sistema completo de registro e inicio de sesión. Cada usuario cuenta con su propio espacio donde guarda su lista de planes favoritos**
+
+- **Los usuarios pueden añadir notas personales y eliminar esos planes favoritos**
 
 ---
 
@@ -41,9 +41,9 @@
 
 ### **APIs externas**
 - Ticketmaster Discovery
-- hotels-api.com 
->
-    ATENCION: Ahora mismo la aplicacion cuenta con alrededor de 80 solicitudes para hotels-api.com (USAR_MOCK=0) para ofrecer la experiencia completa. No obstante, durante el desarrollo se implementó y probó un modo simulado, una variable de entorno (USAR_MOCK=1) como medida que limitaba la petición de solicitudes innecesarias. En este "mock" se utilizaban datos de ejemplo con coordenadas reales de Londres para garantizar estabilidad, y además unos datos falsos que se ajustaban a todos los radios disponibles
+- hotels-api.com
+  
+< ATENCION: Ahora mismo la aplicacion cuenta con alrededor de 80 solicitudes para hotels-api.com (USAR_MOCK=0) para ofrecer la experiencia completa. No obstante, durante el desarrollo se implementó y probó un modo simulado, una variable de entorno (USAR_MOCK=1) como medida que limitaba la petición de solicitudes innecesarias. En este "mock" se utilizaban datos de ejemplo con coordenadas reales de Londres para garantizar estabilidad, y además unos datos falsos que se ajustaban a todos los radios disponibles >
 
 ---
 
@@ -57,4 +57,8 @@
 
 ---
 
-**El despliegue obligaba a hacer una migración de base de datos**
+## Credenciales de prueba
+
+**Para probar toda la aplicación sin necesidad de crear una cuenta nueva, puedes iniciar sesión con estos datos:**
+- Email: Usuariodemo@connoisseur.com
+- Contraseña: Demo1234!
