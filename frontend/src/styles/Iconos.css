@@ -1,0 +1,17 @@
+/* Clase de utilidad para añadir a cualquier icono de FontAwesome */
+.icono-fa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  & :hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    background-color: brown;
+
+  }
+
+}
+
+

@@ -1,0 +1,57 @@
+.homepage {
+  font-family: Ubuntu, 'Helvetica Neue', sans-serif; 
+  min-height: calc(100vh - 90px);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  text-align: center;
+
+  h1{
+    margin-bottom: 24px;
+  }
+
+  p {
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+
+  button {
+    padding: 16px 32px;
+    border: 1px solid #000;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+
+.hero-image-container {
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 60px);
+  object-fit: cover;         
+
+}
+
+@media (max-width: 700px) {
+  .homepage { grid-template-columns: 1fr; }
+  .hero-image-container { display: none; }
+  .header { padding: 0 12px; }
+  .logo { font-size: 18px; letter-spacing: 1px; }
+  .auth-buttons button { padding: 8px 12px; }
+}

@@ -1,0 +1,31 @@
+:root {
+  --text: #111;
+  --background: #fff;
+  --border: #111;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Ubuntu, 'Helvetica Neue', sans-serif; 
+  margin: 0;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+}
+
+button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

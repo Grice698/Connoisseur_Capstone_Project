@@ -1,0 +1,148 @@
+.buscar {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.buscar-detalles-plan {
+    border: 2px solid #000;
+    padding: 2rem;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto; /* Centrado en pantalla */
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1); 
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+   }
+
+    .detalle-seccion {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #ccc;
+
+        h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+        }        
+
+        p {
+            margin: 0;
+            color: #555;
+            font-size: 0.95rem;  
+        };
+
+    }
+
+    .confirmacion-acciones {
+        text-align: center;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+        .btn-aceptar-detalles {
+          min-width: 200px;
+          padding: 12px 24px;
+          font-size: 0.95rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+
+}
+
+.form-busqueda { 
+  display: flex; 
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem; 
+
+  input {
+    padding: 14px 18px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+
+    :focus {
+      outline: none;
+      border-color: #0066cc;
+      box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+    }
+  }
+}
+
+.form-busqueda input::placeholder {
+  color: #999;
+  font-style: italic;
+  opacity: 1;
+  transition: opacity 0.1s ease;
+}
+
+.form-busqueda input:focus::placeholder {
+  opacity: 0;
+}
+
+.grid-eventos, .grid-alojamientos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  align-items: start;
+  padding: 20px 0; 
+  margin: 0 -10px;
+}
+
+/* RESPONSIVE PARA EL MOVIL */
+
+@media (max-width: 768px) {
+
+  .buscar {
+    padding: 1rem;
+  }
+  
+  .form-busqueda {
+    flex-direction: column;
+  }
+
+  input, button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .grid-eventos, .grid-alojamientos {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .buscar-detalles-plan {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .botones-radio {
+    justify-content: center;
+  }
+
+  .btn-aceptar-detalles {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,17 @@
+$kind: http-request
+name: https://api.hotels-api.com/v2/hotels/search
+description: ""
+url: https://api.hotels-api.com/v2/hotels/search?
+method: GET
+headers:
+  - key: X-API-KEY
+    value: "b426969900e4c90c1cf0f26fbc17f0c624a0f666f643ae577941b078549b3c29 "
+    disabled: false
+    description: hotelsapi
+  - key: ""
+    value: ""
+    disabled: true
+    description: ""
+queryParams:
+  "": null
+order: 1791037947479

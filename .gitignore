@@ -1,0 +1,21 @@
+# Python
+backend/.venv/
+
+# Environment variables
+.env
+backend/.env
+
+# Node
+frontend/node_modules/
+
+# Build
+frontend/dist/
+frontend/build/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# SQLite
+*.db
+backend/connoisseur.db
